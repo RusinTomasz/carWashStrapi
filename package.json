@@ -1,0 +1,46 @@
+{
+  "name": "carwashstrapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "content-type-parser": "^1.0.2",
+    "csv-parse": "^4.8.2",
+    "get-urls": "^9.2.0",
+    "knex": "0.21.18",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mysql": "2.18.1",
+    "request": "^2.88.2",
+    "rss-parser": "^3.7.3",
+    "simple-statistics": "^7.0.7",
+    "strapi": "3.5.4",
+    "strapi-admin": "3.5.4",
+    "strapi-connector-bookshelf": "3.5.4",
+    "strapi-plugin-content-manager": "3.5.4",
+    "strapi-plugin-content-type-builder": "3.5.4",
+    "strapi-plugin-email": "3.5.4",
+    "strapi-plugin-upload": "3.5.4",
+    "strapi-plugin-users-permissions": "3.5.4",
+    "strapi-utils": "3.5.4",
+    "striptags": "^3.1.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "2a086586-306a-4ca0-a210-e214e7f13442"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

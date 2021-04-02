@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carwashestypes",
+  "info": {
+    "name": "Car Washes Types",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "car_washes": {
+      "via": "car_wash_type",
+      "collection": "car-wash"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carwash",
+  "info": {
+    "name": "Car wash",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "car_wash_type": {
+      "model": "categories",
+      "via": "car_washes"
+    },
+    "city": {
+      "type": "string"
+    },
+    "city_slug": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "full_address": {
+      "type": "string"
+    },
+    "image_from_maps": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "plus_code": {
+      "type": "string"
+    },
+    "rating_maps": {
+      "type": "decimal"
+    },
+    "state": {
+      "type": "string"
+    },
+    "total_reviews_maps": {
+      "type": "integer"
+    },
+    "voivodeship": {
+      "type": "string"
+    },
+    "voivodeship_slug": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "monday_open_hours": {
+      "type": "string"
+    },
+    "wednesday_open_hours": {
+      "type": "string"
+    },
+    "tuesday_open_hours": {
+      "type": "string"
+    },
+    "thursday_open_hours": {
+      "type": "string"
+    },
+    "friday_open_hours": {
+      "type": "string"
+    },
+    "saturday_open_hours": {
+      "type": "string"
+    },
+    "sunday_open_hours": {
+      "type": "string"
+    },
+    "promoted_frontpage": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/car-washes",
+      "handler": "car-wash.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/car-washes/count",
+      "handler": "car-wash.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/car-washes/:id",
+      "handler": "car-wash.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/car-washes",
+      "handler": "car-wash.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/car-washes/:id",
+      "handler": "car-wash.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/car-washes/:id",
+      "handler": "car-wash.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
