@@ -18,6 +18,22 @@
     },
     {
       "method": "GET",
+      "path": "/car-washes/voivodeships",
+      "handler": "car-wash.getVoivodeships",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/car-washes/cities/:type/:voivodeship",
+      "handler": "car-wash.getCitiesByTypeAndVoivodeship",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/car-washes/:id",
       "handler": "car-wash.findOne",
       "config": {
