@@ -87,6 +87,9 @@
     },
     "promoted_frontpage": {
       "type": "boolean"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

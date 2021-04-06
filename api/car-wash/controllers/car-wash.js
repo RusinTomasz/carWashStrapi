@@ -4,6 +4,7 @@
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
  * to customize this controller
  */
+const slugify = require("slugify");
 
 module.exports = {
   getVoivodeships: async (ctx) => {
@@ -38,4 +39,22 @@ module.exports = {
 
     ctx.send(cities);
   },
+
+  // rebuildSlugs: async (ctx) => {
+  //   const query = {
+  //     _limit: 5000,
+  //   };
+  //   const entity = await strapi.services["car-wash"].find(query);
+
+  //   entity.forEach((item) => {
+  //     if (item.name) {
+  //       const stringToSlug = item.name + "-" + item.full_address;
+  //       const newSlug = slugify(stringToSlug).toLowerCase();
+  //       const id = item.id;
+  //       // strapi.query("car-wash").update({ id }, { slug: newSlug });
+  //     }
+  //   });
+
+  //   ctx.send(entity);
+  // },
 };
