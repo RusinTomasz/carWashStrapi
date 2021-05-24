@@ -9,6 +9,14 @@
       }
     },
     {
+      "method": "Post",
+      "path": "/car-washes/sendemail/basic",
+      "handler": "car-wash.sendBasicEmail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "GET",
       "path": "/car-washes/count",
       "handler": "car-wash.count",

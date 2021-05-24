@@ -10,6 +10,11 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "comments": {
+    "plugin": "comments",
+    "collection": "comment",
+    "via": "related"
+  },
   "attributes": {
     "name": {
       "type": "string",
@@ -18,6 +23,11 @@
     "car_wash_type": {
       "model": "categories",
       "via": "car_washes"
+    },
+    "comments": {
+      "plugin": "comments",
+      "collection": "comment",
+      "via": "related"
     },
     "city": {
       "type": "string"
