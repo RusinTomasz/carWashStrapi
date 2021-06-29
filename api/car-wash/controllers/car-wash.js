@@ -41,6 +41,7 @@ module.exports = {
   },
 
   sendBasicEmail: async (ctx) => {
+    console.log(ctx.body);
     const body = ctx.request.body;
     const { formType, name, subject, email, message, regulations } = body;
 
@@ -49,6 +50,7 @@ module.exports = {
     try {
       const emailOptions = {
         to: "rankingmyjni@gmail.com",
+        from: "rankingmyjni@gmail.com",
         subject: `${subject} - ${formType}`,
         html: `<h1>${subject}</h1><p>Wiadomość od ${name} o emailu: ${email}</p><br/>
         <h3>Przesłane informacje:</h3>
@@ -73,6 +75,7 @@ module.exports = {
     try {
       const emailOptionsSecond = {
         to: email,
+        from: "rankingmyjni@gmail.com",
         subject: subject,
         html: `<p>Dziękujemy za przesłanie informacji. Postaramy się zareagować najszybciej jak to możliwe.</p><br/>
         <h3>Przesłane informacje:</h3>
