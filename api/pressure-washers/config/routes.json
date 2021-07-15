@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pressure-washers",
+      "handler": "pressure-washers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pressure-washers/count",
+      "handler": "pressure-washers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pressure-washers/:id",
+      "handler": "pressure-washers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pressure-washers",
+      "handler": "pressure-washers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pressure-washers/:id",
+      "handler": "pressure-washers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pressure-washers/:id",
+      "handler": "pressure-washers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

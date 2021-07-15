@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pressure_washer",
+  "info": {
+    "name": "Pressure washer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "initialText": {
+      "type": "richtext"
+    },
+    "washerDescription": {
+      "type": "richtext"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pressure-cleaner-features.feature"
+    },
+    "pros": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pressure-cleaner-features.pros"
+    },
+    "cons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pressure-cleaner-features.cons"
+    },
+    "title": {
+      "type": "string"
+    },
+    "score": {
+      "type": "decimal"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "shopLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pressure-cleaner-features.shop-link",
+      "max": 3
+    }
+  }
+}

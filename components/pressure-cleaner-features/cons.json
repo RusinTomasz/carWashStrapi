@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_pressure_cleaner_features_cons",
+  "info": {
+    "name": "Cons",
+    "icon": "minus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "disadvantage": {
+      "type": "richtext"
+    }
+  }
+}

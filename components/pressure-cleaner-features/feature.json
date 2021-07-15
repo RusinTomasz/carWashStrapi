@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_pressure_cleaner_features_features",
+  "info": {
+    "name": "Feature",
+    "icon": "cogs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "richtext"
+    }
+  }
+}

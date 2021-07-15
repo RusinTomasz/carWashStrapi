@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_pressure_cleaner_features_shop_links",
+  "info": {
+    "name": "shopLink",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "linkName": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

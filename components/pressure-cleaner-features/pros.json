@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_pressure_cleaner_features_pros",
+  "info": {
+    "name": "Pros",
+    "icon": "plus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "advantage": {
+      "type": "richtext"
+    }
+  }
+}
